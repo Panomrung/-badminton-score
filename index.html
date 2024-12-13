@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Badminton Scoreboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>BADMINTON SCOREBOARD</h1>
+        <div class="time">09:48</div>
+        <div class="scores">
+            <div class="team">TEAM-A</div>
+            <div class="score">02</div>
+            <div class="score">SCORE</div>
+            <div class="score">03</div>
+            <div class="team">TEAM-B</div>
+        </div>
+        <div class="serving">
+            <div class="set">SET 1</div>
+            <div class="arrow">►</div>
+            <div class="set">0 SET</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+.scoreboard {
+   
+    width: 400px;
+    height: 200px;
+    background-color: #222;
+    color: #f00;
+    text-align: center;
+}
+
+
+.time, .scores, .serving {
+    margin: 10px 0;
+}
+
+
+const teamAScore = document.querySelector('.score:nth-child(2)');
+teamAScore.textContent = 3;
